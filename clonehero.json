@@ -18,10 +18,12 @@
     "note": "Thanks for using autoupdate, please test your updates!",
     "architecture": {
       "64bit": {
-        "url": "http://dl.clonehero.net/clonehero-v.$minorVersion.$patchVersion/clonehero-win32.7z"
+        "url": "http://dl.clonehero.net/clonehero-v.$minorVersion.$patchVersion/clonehero-win64.7z",
+        "extract_dir": "clonehero-win64"
       },
       "32bit": {
-        "url": "http://dl.clonehero.net/clonehero-v.$minorVersion.$patchVersion//clonehero-win32.7z"
+        "url": "http://dl.clonehero.net/clonehero-v.$minorVersion.$patchVersion//clonehero-win32.7z",
+        "extract_dir": "clonehero-win32"
       }
     }
   },
