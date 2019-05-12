@@ -1,27 +1,39 @@
 {
-  "version": "0.65.0",
-  "homepage": "http://etternaonline.com/",
-  "checkver": {
-    "github": "https://github.com/etternagame/etterna"
-  },
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/etternagame/etterna/releases/download/v0.65.0/Etterna-0.65.0-x64.exe#etterna.7z"
+    "version": "0.65.1",
+    "homepage": "http://etternaonline.com/",
+    "checkver": {
+        "github": "https://github.com/etternagame/etterna"
     },
-    "32bit": {
-      "url": "https://github.com/etternagame/etterna/releases/download/v0.65.0/Etterna-0.65.0-i386.exe#etterna.7z"
-    }
-  },
-  "autoupdate": {
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/etternagame/etterna/releases/download/v$version/Etterna-$version-x64.exe#etterna.7z"
-      },
-      "32bit": {
-        "url": "https://github.com/etternagame/etterna/releases/download/v$version/Etterna-$version-i386.exe#etterna.7z"
-      }
-    }
-  },
-  "shortcuts": [["Program\\Etterna.exe", "Etterna"]],
-  "persist": ["Announcers", "BGAnimations", "Songs", "Themes"]
+        "64bit": {
+            "url": "https://github.com/etternagame/etterna/releases/download/v0.65.1/Etterna-0.65.1-x64.exe#etterna.7z",
+            "hash": "6ebf11521be55e77ba56fb4fd49ec319d9a9f60dfda1823fc5775c5893f3204c"
+        },
+        "32bit": {
+            "url": "https://github.com/etternagame/etterna/releases/download/v0.65.1/Etterna-0.65.1-i386.exe#etterna.7z",
+            "hash": "9ea3b417cb866663143862f47a3e22709815b178abda42281ad3800b84b2183f"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/etternagame/etterna/releases/download/v$version/Etterna-$version-x64.exe#etterna.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/etternagame/etterna/releases/download/v$version/Etterna-$version-i386.exe#etterna.7z"
+            }
+        }
+    },
+    "shortcuts": [
+        [
+            "Program\\Etterna.exe",
+            "Etterna"
+        ]
+    ],
+    "persist": [
+        "Announcers",
+        "BGAnimations",
+        "Songs",
+        "Themes"
+    ]
 }

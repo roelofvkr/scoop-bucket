@@ -1,7 +1,7 @@
 {
   "version": "0.22.4",
   "homepage": "https://clonehero.net/",
-  "checkver": "Latest version: v([^\\ ]+)",
+  "checkver": "<div class=\"nav__version\">Latest version: <b>v([^\\ ]+)</b></div>",
   "architecture": {
     "64bit": {
       "url": "http://dl.clonehero.net/clonehero-v.22.4/clonehero-win64.7z",
