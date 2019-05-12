@@ -1,0 +1,31 @@
+{
+  "version": "0.22.4",
+  "homepage": "https://clonehero.net/",
+  "checkver": "Latest version: v([^\\ ]+)",
+  "architecture": {
+    "64bit": {
+      "url": "http://dl.clonehero.net/clonehero-v.22.4/clonehero-win64.7z",
+      "hash": "sha1:822b871b697eac613a7c14ac775626bf703cd4c4",
+      "extract_dir": "clonehero-win64"
+    },
+    "32bit": {
+      "url": "http://dl.clonehero.net/clonehero-v.22.4/clonehero-win32.7z",
+      "hash": "sha1:ca1adb06ba47e854a77b76da735ddb5d37d1b0d2",
+      "extract_dir": "clonehero-win32"
+    }
+  },
+  "autoupdate": {
+    "note": "Thanks for using autoupdate, please test your updates!",
+    "architecture": {
+      "64bit": {
+        "url": "http://dl.clonehero.net/clonehero-v.$minorVersion.$patchVersion/clonehero-win32.7z"
+      },
+      "32bit": {
+        "url": "http://dl.clonehero.net/clonehero-v.$minorVersion.$patchVersion//clonehero-win32.7z"
+      }
+    }
+  },
+  "persist": ["Custom", "Screenshots", "Songs"],
+  "bin": "Clone Hero.exe",
+  "shortcuts": [["Clone Hero.exe", "Clone Hero"]]
+}
