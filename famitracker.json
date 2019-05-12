@@ -1,0 +1,12 @@
+{
+  "version": "0.4.6",
+  "homepage": "http://www.famitracker.com/",
+  "checkver": "Download \\(v([^\\ ]+)\\)",
+  "url": "http://www.famitracker.com/files/FamiTracker-v0.4.6.zip",
+  "autoupdate": {
+    "note": "Thanks for using autoupdate, please test your updates!",
+    "url": "http://www.famitracker.com/files/FamiTracker-v$version.zip"
+  },
+  "bin": "FamiTracker.exe",
+  "shortcuts": [["FamiTracker.exe", "FamiTracker"]]
+}
