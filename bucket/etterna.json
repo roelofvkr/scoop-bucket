@@ -1,0 +1,27 @@
+{
+  "version": "0.65.0",
+  "homepage": "http://etternaonline.com/",
+  "checkver": {
+    "github": "https://github.com/etternagame/etterna"
+  },
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/etternagame/etterna/releases/download/v0.65.0/Etterna-0.65.0-x64.exe#etterna.7z"
+    },
+    "32bit": {
+      "url": "https://github.com/etternagame/etterna/releases/download/v0.65.0/Etterna-0.65.0-i386.exe#etterna.7z"
+    }
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/etternagame/etterna/releases/download/v$version/Etterna-$version-x64.exe#etterna.7z"
+      },
+      "32bit": {
+        "url": "https://github.com/etternagame/etterna/releases/download/v$version/Etterna-$version-i386.exe#etterna.7z"
+      }
+    }
+  },
+  "shortcuts": [["Program\\Etterna.exe", "Etterna"]],
+  "persist": ["Announcers", "BGAnimations", "Songs", "Themes"]
+}
