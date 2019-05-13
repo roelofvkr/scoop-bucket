@@ -9,5 +9,5 @@
     "url": "http://chuck.cs.princeton.edu/release/files/exe/chuck-$version.msi"
   },
   "bin": "PFiles\\ChucK\\bin\\chuck.exe",
-  "shortcuts": []
+  "shortcuts": [["PFiles\\ChucK\\miniAudicle.exe", "miniAudicle"]]
 }
