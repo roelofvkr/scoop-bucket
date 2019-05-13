@@ -1,0 +1,13 @@
+{
+  "version": "1.4.0.0",
+  "homepage": "http://chuck.cs.princeton.edu/",
+  "checkver": "<a href=\"release/\">([^\\ ]+)</a>",
+  "url": "http://chuck.cs.princeton.edu/release/files/exe/chuck-1.4.0.0.msi",
+  "hash": "d3f24d49222dd18d0c7e3b3bb2d2965ad68dccd8e774723c62ad7eb33127a6d5",
+  "autoupdate": {
+    "note": "Thanks for using autoupdate, please test your updates!",
+    "url": "http://chuck.cs.princeton.edu/release/files/exe/chuck-$version.msi"
+  },
+  "bin": "PFiles\\ChucK\\bin\\chuck.exe",
+  "shortcuts": []
+}
