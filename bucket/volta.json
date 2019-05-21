@@ -1,0 +1,27 @@
+{
+    "version": "0.5.2",
+    "homepage": "http://volta.sh",
+    "checkver": {
+        "github": "https://github.com/volta-cli/volta"
+    },
+    "url": "https://github.com/volta-cli/volta/releases/download/v0.5.2/volta-0.5.2-windows-x86_64.msi",
+    "hash": "677f916285d492fe1828e444b0def98f03ed52e67e9137c179ef03299f7b5f2d",
+    "autoupdate": {
+        "url": "https://github.com/volta-cli/volta/releases/download/v$version/volta-$version-windows-x86_64.msi"
+    },
+    "bin": [
+        "PFiles\\Volta\\bin\\volta.exe",
+        "PFiles\\Volta\\bin\\node.exe",
+        "PFiles\\Volta\\bin\\npm.exe",
+        "PFiles\\Volta\\bin\\npx.exe",
+        "PFiles\\Volta\\bin\\yarn.exe"
+    ],
+    "post_install": [
+        "if(Test-Path(\"$dir\\vscode-install-context.reg\")) {",
+        "  $voltadir = \"$dir\\bin\\\".Replace('\\', '\\\\')",
+        "  $content = Get-Content \"$dir\\volta-install-dir.reg\"",
+        "  $content = $content.Replace('$dir', $voltadir)",
+        "  $content | Set-Content -Path \"$dir\\volta-install-dir.reg\"",
+        "}"
+    ]
+}
