@@ -10,10 +10,17 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- checkout: self
+  persistCredentials: true
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: PowerShell@2
+  displayName: "Install scoop"
+  inputs:
+    targetType: 'inline'
+    script: 'iex (new-object net.webclient).downloadstring(''https://get.scoop.sh'')'
+
+- task: PowerShell@2
+  displayName: "Run Auto-PR"
+  inputs:
+    filePath: './bin/auto-pr.ps1'
+    arguments: -p
