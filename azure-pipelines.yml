@@ -28,6 +28,12 @@ steps:
   inputs:
     targetType: 'inline'
     script: 'Write-Host "##vso[task.prependpath]$env:SCOOP\Shims"'
+  
+- script: scoop install hub
+  displayName: "Install hub"
+  env:
+    SCOOP: $(Agent.BuildDirectory)\SCOOP\
+
 
 - task: PowerShell@2
   displayName: "Run Auto-PR"
