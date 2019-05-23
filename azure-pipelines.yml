@@ -12,6 +12,7 @@ pool:
 steps:
 - checkout: self
   persistCredentials: true
+  clean: true
 
 - task: PowerShell@2
   displayName: "Install scoop"
@@ -34,6 +35,22 @@ steps:
   env:
     SCOOP: $(Agent.BuildDirectory)\SCOOP\
 
+- script: |
+    git config --local user.name "Azure Pipelines"
+    git config --local user.email "azuredevops@microsoft.com"
+  displayName: "Set git config"
+
+- task: PowerShell@2
+  displayName: "Rewrite PR script to use ***NO_CI***"
+  env:
+    SCOOP: $(Agent.BuildDirectory)\SCOOP\
+    SCOOP_HOME: $(Agent.BuildDirectory)\SCOOP\apps\scoop\current
+  inputs:
+    targetType: 'inline'
+    script: |
+      if(!$env:SCOOP_HOME) { $env:SCOOP_HOME = resolve-path (split-path (split-path (scoop which scoop))) }
+      $autopr = "$env:SCOOP_HOME/bin/auto-pr.ps1"
+      (Get-Content $autopr).replace('`${app}: Update to version `$version', '`${app}: Update to version `$version ***NO_CI***') | Set-Content $autopr
 
 - task: PowerShell@2
   displayName: "Run Auto-PR"
