@@ -50,7 +50,7 @@ steps:
     script: |
       if(!$env:SCOOP_HOME) { $env:SCOOP_HOME = resolve-path (split-path (split-path (scoop which scoop))) }
       $autopr = "$env:SCOOP_HOME/bin/auto-pr.ps1"
-      (Get-Content $autopr).replace('execute "hub commit -m `'`${app}: Update to version `$version`'"', 'execute "hub commit -m `'`${app}: Update to version `$version`' `n ***NO_CI***"') | Set-Content $autopr
+      (Get-Content $autopr).replace('`${app}: Update to version `$version', '`${app}: Update to version `$version ***NO_CI***') | Set-Content $autopr
 
 - task: PowerShell@2
   displayName: "Run Auto-PR"
