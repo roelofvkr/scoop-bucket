@@ -1,40 +1,40 @@
 {
-  "version": "0.5.0",
-  "homepage": "http://volta.sh",
-  "checkver": {
-    "github": "https://github.com/volta-cli/volta"
-  },
-  "url": [
-    "https://github.com/volta-cli/volta/releases/download/v0.5.2/volta-0.5.2-windows-x86_64.msi",
-    "https://raw.githubusercontent.com/roelofvkr/scoop-bucket/master/scripts/volta-install-dir.reg"
-  ],
-  "hash": [
-    "677f916285d492fe1828e444b0def98f03ed52e67e9137c179ef03299f7b5f2d",
-    "e4c81264ff4b56d7632ea77164142956a1b6952711ad564a906f98c0c3c930c9"
-  ],
-  "autoupdate": {
-    "url": "https://github.com/volta-cli/volta/releases/download/v$version/volta-$version-windows-x86_64.msi"
-  },
-  "bin": [
-    "PFiles\\Volta\\bin\\volta.exe",
-    "PFiles\\Volta\\bin\\node.exe",
-    "PFiles\\Volta\\bin\\npm.exe",
-    "PFiles\\Volta\\bin\\npx.exe",
-    "PFiles\\Volta\\bin\\yarn.exe"
-  ],
-  "post_install": [
-    "if(Test-Path(\"$dir\\volta-install-dir.reg\")) {",
-    "  $voltadir = \"$dir\\PFiles\\Volta\\bin\\\".Replace('\\', '\\\\')",
-    "  $content = Get-Content \"$dir\\volta-install-dir.reg\"",
-    "  $content = $content.Replace('$dir', $voltadir)",
-    "  $content | Set-Content -Path \"$dir\\volta-install-dir.reg\"",
-    "  Start-Process reg -ArgumentList \"import $dir\\volta-install-dir.reg\" -Verb runAs",
-    "}",
-    "New-Item -ItemType Directory -Force -Path $dir\\data\\"
-  ],
-  "persist": "data",
-  "env_add_path": "data\\volta_home\\bin",
-  "env_set": {
-    "VOLTA_HOME": "$dir\\data\\volta_home"
-  }
+    "version": "0.5.2",
+    "homepage": "http://volta.sh",
+    "checkver": {
+        "github": "https://github.com/volta-cli/volta"
+    },
+    "url": [
+        "https://github.com/volta-cli/volta/releases/download/v0.5.2/volta-0.5.2-windows-x86_64.msi",
+        "https://raw.githubusercontent.com/roelofvkr/scoop-bucket/master/scripts/volta-install-dir.reg"
+    ],
+    "hash": [
+        "677f916285d492fe1828e444b0def98f03ed52e67e9137c179ef03299f7b5f2d",
+        "e4c81264ff4b56d7632ea77164142956a1b6952711ad564a906f98c0c3c930c9"
+    ],
+    "autoupdate": {
+        "url": "https://github.com/volta-cli/volta/releases/download/v$version/volta-$version-windows-x86_64.msi"
+    },
+    "bin": [
+        "PFiles\\Volta\\bin\\volta.exe",
+        "PFiles\\Volta\\bin\\node.exe",
+        "PFiles\\Volta\\bin\\npm.exe",
+        "PFiles\\Volta\\bin\\npx.exe",
+        "PFiles\\Volta\\bin\\yarn.exe"
+    ],
+    "post_install": [
+        "if(Test-Path(\"$dir\\volta-install-dir.reg\")) {",
+        "  $voltadir = \"$dir\\PFiles\\Volta\\bin\\\".Replace('\\', '\\\\')",
+        "  $content = Get-Content \"$dir\\volta-install-dir.reg\"",
+        "  $content = $content.Replace('$dir', $voltadir)",
+        "  $content | Set-Content -Path \"$dir\\volta-install-dir.reg\"",
+        "  Start-Process reg -ArgumentList \"import $dir\\volta-install-dir.reg\" -Verb runAs",
+        "}",
+        "New-Item -ItemType Directory -Force -Path $dir\\data\\"
+    ],
+    "persist": "data",
+    "env_add_path": "data\\volta_home\\bin",
+    "env_set": {
+        "VOLTA_HOME": "$dir\\data\\volta_home"
+    }
 }
