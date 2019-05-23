@@ -45,6 +45,18 @@ steps:
   displayName: "Set git config"
 
 - task: PowerShell@2
+  displayName: "Rewrite PR script to use ***NO_CI***"
+  env:
+    SCOOP: $(Agent.BuildDirectory)\SCOOP\
+    SCOOP_HOME: $(Agent.BuildDirectory)\SCOOP\apps\scoop\current
+  inputs:
+    targetType: 'inline'
+    script: |
+      if(!$env:SCOOP_HOME) { $env:SCOOP_HOME = resolve-path (split-path (split-path (scoop which scoop))) }
+      $autopr = "$env:SCOOP_HOME/bin/auto-pr.ps1"
+      (Get-Content $autopr).replace('execute "hub commit -m \'${app}: Update to version $version\'"', 'execute "hub commit -m \'${app}: Update to version $version\' ***NO_CI***"') | Set-Content $autopr
+
+- task: PowerShell@2
   displayName: "Run Auto-PR"
   env:
     SCOOP: $(Agent.BuildDirectory)\SCOOP\
