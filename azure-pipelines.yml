@@ -21,8 +21,13 @@ steps:
     targetType: 'inline'
     script: 'iex (new-object net.webclient).downloadstring(''https://get.scoop.sh'')'
 
-- powershell: Write-Host "##vso[task.prependpath]$env:SCOOP\Shims"
-  displayName: Add scoop to path
+- task: PowerShell@2
+  displayName: "Install scoop"
+  env:
+    SCOOP: $(Agent.BuildDirectory)\SCOOP\
+  inputs:
+    targetType: 'inline'
+    script: 'Write-Host "##vso[task.prependpath]$env:SCOOP\Shims"'
 
 - task: PowerShell@2
   displayName: "Run Auto-PR"
