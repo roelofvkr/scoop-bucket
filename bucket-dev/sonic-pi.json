@@ -1,0 +1,12 @@
+{
+  "version": "3.1.0",
+  "homepage": "https://sonic-pi.net/",
+  "checkver": "Sonic Pi v([^\\ ]+) is compatible with Windows ",
+  "url": "https://sonic-pi.net/files/releases/v3.1.0/Sonic-Pi-for-Win-v3.1.0.msi",
+  "hash": "bb6805d9a5bfb3b220491310518785d87579556740fd9bbfa11b89f30284ed65",
+  "autoupdate": {
+    "note": "Thanks for using autoupdate, please test your updates!",
+    "url": "https://sonic-pi.net/files/releases/v$version/Sonic-Pi-for-Win-v$version.msi"
+  },
+  "shortcuts": [["app\\gui\\qt\\release", "Sonic Pi"]]
+}
