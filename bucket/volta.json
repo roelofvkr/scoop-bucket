@@ -12,7 +12,7 @@
   "hash": [
     "677f916285d492fe1828e444b0def98f03ed52e67e9137c179ef03299f7b5f2d",
     "e4c81264ff4b56d7632ea77164142956a1b6952711ad564a906f98c0c3c930c9",
-    "e08441ac870876e2cb8b2937d83ec5f74fddf6c55c64554cce887a7d2e7b36d6"
+    "f3bd9015fd747168532adc5f22c9bece56d3595c6417580f1054065a471ca607"
   ],
   "autoupdate": {
     "url": "https://github.com/volta-cli/volta/releases/download/v$version/volta-$version-windows-x86_64.msi"
