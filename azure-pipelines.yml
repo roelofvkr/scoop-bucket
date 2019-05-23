@@ -39,6 +39,10 @@ steps:
   env:
     SCOOP: $(Agent.BuildDirectory)\SCOOP\
 
+- script: |
+    git config --local user.name "Azure Pipelines"
+    git config --local user.email "azuredevops@microsoft.com"
+  displayName: "Set git config"
 
 - task: PowerShell@2
   displayName: "Run Auto-PR"
