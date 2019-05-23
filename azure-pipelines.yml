@@ -25,7 +25,7 @@ steps:
 - task: PowerShell@2
   displayName: "Run Auto-PR"
   env:
-    SCOOP_HOME: $(Agent.BuildDirectory)\SCOOP\apps\scoop\current\
+    SCOOP_HOME: $(Agent.BuildDirectory)\SCOOP\apps\scoop\current
   inputs:
     filePath: './bin/auto-pr.ps1'
     arguments: -p
