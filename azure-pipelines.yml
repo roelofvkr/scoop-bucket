@@ -4,7 +4,11 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+  branches:
+    include:
+      - '*'
+    exclude:
+    - master
 
 pool:
   vmImage: 'vs2017-win2016'
@@ -12,6 +16,7 @@ pool:
 steps:
 - checkout: self
   persistCredentials: true
+  clean: true
 
 - task: PowerShell@2
   displayName: "Install scoop"
