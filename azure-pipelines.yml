@@ -15,12 +15,17 @@ steps:
 
 - task: PowerShell@2
   displayName: "Install scoop"
+  env:
+    SCOOP: $(Agent.BuildDirectory)\SCOOP\
   inputs:
     targetType: 'inline'
     script: 'iex (new-object net.webclient).downloadstring(''https://get.scoop.sh'')'
 
+
 - task: PowerShell@2
   displayName: "Run Auto-PR"
+  env:
+    SCOOP_HOME: $(Agent.BuildDirectory)\SCOOP\apps\scoop\current\
   inputs:
     filePath: './bin/auto-pr.ps1'
     arguments: -p
