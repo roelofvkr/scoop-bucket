@@ -1,0 +1,45 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'vs2017-win2016'
+
+steps:
+- checkout: self
+  persistCredentials: true
+
+- task: PowerShell@2
+  displayName: "Install scoop"
+  env:
+    SCOOP: $(Agent.BuildDirectory)\SCOOP\
+  inputs:
+    targetType: 'inline'
+    script: 'iex (new-object net.webclient).downloadstring(''https://get.scoop.sh'')'
+
+- task: PowerShell@2
+  displayName: "Add scoop shims to path"
+  env:
+    SCOOP: $(Agent.BuildDirectory)\SCOOP\
+  inputs:
+    targetType: 'inline'
+    script: 'Write-Host "##vso[task.prependpath]$env:SCOOP\Shims"'
+  
+- script: scoop install hub
+  displayName: "Install hub"
+  env:
+    SCOOP: $(Agent.BuildDirectory)\SCOOP\
+
+
+- task: PowerShell@2
+  displayName: "Run Auto-PR"
+  env:
+    SCOOP: $(Agent.BuildDirectory)\SCOOP\
+    SCOOP_HOME: $(Agent.BuildDirectory)\SCOOP\apps\scoop\current
+  inputs:
+    filePath: './bin/auto-pr.ps1'
+    arguments: -p
