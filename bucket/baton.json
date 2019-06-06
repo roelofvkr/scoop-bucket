@@ -1,0 +1,14 @@
+{
+  "version": "0.1.6",
+  "homepage": "https://github.com/joshuathompson/baton",
+  "checkver": {
+    "github": "https://github.com/joshuathompson/baton"
+  },
+  "url": "https://github.com/joshuathompson/baton/releases/download/0.1.6/baton-0.1.6-windows-amd64.exe#/baton.exe",
+  "hash": "4f5cb46c561e7cc9ece9161bdd3f62f93ba36600f19a3d5a123b9b5d05ac3c6f",
+  "autoupdate": {
+    "note": "Thanks for using autoupdate, please test your updates!",
+    "url": "https://github.com/joshuathompson/baton/releases/download/$version/baton-$version-windows-amd64.exe/baton.exe"
+  },
+  "bin": "baton.exe"
+}
