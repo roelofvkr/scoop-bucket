@@ -1,11 +1,11 @@
 {
-    "version": "2019.606.0",
+    "version": "2019.608.0",
     "homepage": "http://osu.ppy.sh/",
     "checkver": {
         "github": "https://github.com/ppy/osu"
     },
-    "url": "https://github.com/ppy/osu/releases/download/2019.606.0/osulazer-2019.606.0-full.nupkg#/dl.7z",
-    "hash": "0011ffa6210798fc0e9c63a92698e38db7a103ba0cdb2d817a9a96ddf845661f",
+    "url": "https://github.com/ppy/osu/releases/download/2019.608.0/osulazer-2019.608.0-full.nupkg#/dl.7z",
+    "hash": "0e3b69030a1530712d29b28d88107d78e915efa46093cddc85bfadcc1afadb61",
     "extract_dir": "lib\\net45",
     "autoupdate": {
         "url": "https://github.com/ppy/osu/releases/download/$version/osulazer-$version-full.nupkg#/dl.7z"
