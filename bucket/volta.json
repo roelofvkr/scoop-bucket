@@ -1,16 +1,16 @@
 {
-    "version": "0.5.3",
+    "version": "0.5.4",
     "homepage": "http://volta.sh",
     "checkver": {
         "github": "https://github.com/volta-cli/volta"
     },
     "url": [
-        "https://github.com/volta-cli/volta/releases/download/v0.5.3/volta-0.5.3-windows-x86_64.msi",
+        "https://github.com/volta-cli/volta/releases/download/v0.5.4/volta-0.5.4-windows-x86_64.msi",
         "https://raw.githubusercontent.com/roelofvkr/scoop-bucket/master/scripts/volta-install-dir.reg",
         "https://raw.githubusercontent.com/roelofvkr/scoop-bucket/master/scripts/volta-remove-install-dir.reg"
     ],
     "hash": [
-        "905bc38fe15c71ebc3528f26e6f2885e8d9723595a8e7a2d81fb30b104d55e46",
+        "ad1ced15b60fb790e6acb7b88a073e7bd558ceb59495ecd63898db5e3406097d",
         "e4c81264ff4b56d7632ea77164142956a1b6952711ad564a906f98c0c3c930c9",
         "e08441ac870876e2cb8b2937d83ec5f74fddf6c55c64554cce887a7d2e7b36d6"
     ],
