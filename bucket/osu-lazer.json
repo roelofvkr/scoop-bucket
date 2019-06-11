@@ -15,8 +15,5 @@
             "osu!.exe",
             "Osu!Lazer"
         ]
-    ],
-    "installer": {
-        "file": "install"
-    }
+    ]
 }
