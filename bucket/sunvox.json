@@ -1,0 +1,13 @@
+{
+  "version": "0.0.0",
+  "homepage": "http://www.warmplace.ru/soft/sunvox/",
+  "checkver": "Latest release - v([^\\ ]+)",
+  "url": "http://www.warmplace.ru/soft/sunvox/sunvox-1.9.4c.zip",
+  "hash": "",
+  "autoupdate": {
+    "note": "Thanks for using autoupdate, please test your updates!",
+    "url": "http://www.warmplace.ru/soft/sunvox/sunvox-$version.zip"
+  },
+  "bin": "sunvox\\sunvox\\windows_x86_64\\sunvox.exe",
+  "shortcuts": [["sunvox\\sunvox\\windows_x86_64\\sunvox.exe", "Sunvox"]]
+}
