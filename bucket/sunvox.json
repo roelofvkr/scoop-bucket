@@ -1,13 +1,18 @@
 {
-  "version": "0.0.0",
-  "homepage": "http://www.warmplace.ru/soft/sunvox/",
-  "checkver": "Latest release - v([^\\ ]+)",
-  "url": "http://www.warmplace.ru/soft/sunvox/sunvox-1.9.4c.zip",
-  "hash": "",
-  "autoupdate": {
-    "note": "Thanks for using autoupdate, please test your updates!",
-    "url": "http://www.warmplace.ru/soft/sunvox/sunvox-$version.zip"
-  },
-  "bin": "sunvox\\sunvox\\windows_x86_64\\sunvox.exe",
-  "shortcuts": [["sunvox\\sunvox\\windows_x86_64\\sunvox.exe", "Sunvox"]]
+    "version": "1.9.4c",
+    "homepage": "http://www.warmplace.ru/soft/sunvox/",
+    "checkver": "Latest release - v([^\\ ]+)",
+    "url": "http://www.warmplace.ru/soft/sunvox/sunvox-1.9.4c.zip",
+    "hash": "19c1a4e28459e31e1a19986f219d4caa4eb2cb5bc9f6aa994abdbb2ebf6ac4ac",
+    "autoupdate": {
+        "note": "Thanks for using autoupdate, please test your updates!",
+        "url": "http://www.warmplace.ru/soft/sunvox/sunvox-$version.zip"
+    },
+    "bin": "sunvox\\sunvox\\windows_x86_64\\sunvox.exe",
+    "shortcuts": [
+        [
+            "sunvox\\sunvox\\windows_x86_64\\sunvox.exe",
+            "Sunvox"
+        ]
+    ]
 }
