@@ -1,11 +1,11 @@
 {
-    "version": "1.3.1",
+    "version": "1.3.3",
     "homepage": "https://github.com/miguelmota/cointop/",
     "checkver": {
         "github": "https://github.com/miguelmota/cointop/"
     },
-    "url": "https://github.com/miguelmota/cointop/releases/download/1.3.1/cointop_1.3.1_windows_amd64.tar.gz",
-    "hash": "4b3c6ccd58f00cdd9ac3a576d5cb4807755b3063ad997dfda52c868d7aa87799",
+    "url": "https://github.com/miguelmota/cointop/releases/download/1.3.3/cointop_1.3.3_windows_amd64.tar.gz",
+    "hash": "155b3b04a36875c8b5d4f59109b48e6739c7199cae3a28756e49610323a54413",
     "autoupdate": {
         "note": "Thanks for using autoupdate, please test your updates!",
         "url": "https://github.com/miguelmota/cointop/releases/download/$version/cointop_$version_windows_amd64.tar.gz"
