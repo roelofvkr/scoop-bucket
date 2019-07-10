@@ -1,0 +1,10 @@
+{
+  "version": "3.1.2",
+  "homepage": "https://www.ledger-cli.org/",
+  "checkver": {
+    "github": "https://github.com/ledger/ledger"
+  },
+  "url": "https://github.com/AlexanderAA/ledger_binaries_windows/raw/master/ledger_3.1.2_win_bin.zip",
+  "hash": "79881b7048e13c7d6f208eab17baf75b0120e3908872cc576a6ad00c587509b2",
+  "bin": "ledger.exe"
+}
