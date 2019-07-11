@@ -18,7 +18,7 @@
         [
             "cointop.exe",
             "cointop",
-            "-config=\"$dir/data/config\""
+            "--config=\"$dir/data/config\""
         ]
     ]
 }
