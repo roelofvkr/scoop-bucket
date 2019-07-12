@@ -1,18 +1,22 @@
 {
-    "version": "3.6.2",
-    "homepage": "https://nethack.org/",
-    "checkver": {
-        "url": "https://nethack.org/v362/ports/download-win.html",
-        "regex": "<a href=\"../../common/index.html\">Version ([^\\ ]+)</a>"
-    },
-    "url": "https://nethack.org/download/3.6.2/NetHack-362-win-x86.zip",
-    "hash": "244ffd07c59740fc076f1a86034256ecb95ed2e6076ae8099d9df8929fd89140",
-    "autoupdate": {
-        "note": "Thanks for using autoupdate, please test your updates!",
-        "url": "https://nethack.org/download/$version/NetHack-$cleanVersion-win-x86.zip"
-    },
-    "persist": [
-        
-    ],
-    "bin": "NetHack.exe"
+  "version": "3.6.2",
+  "homepage": "https://nethack.org/",
+  "checkver": {
+    "url": "https://nethack.org/v362/ports/download-win.html",
+    "regex": "<a href=\"../../common/index.html\">Version ([^\\ ]+)</a>"
+  },
+  "url": "https://nethack.org/download/3.6.2/NetHack-362-win-x86.zip",
+  "hash": "244ffd07c59740fc076f1a86034256ecb95ed2e6076ae8099d9df8929fd89140",
+  "autoupdate": {
+    "note": "Thanks for using autoupdate, please test your updates!",
+    "url": "https://nethack.org/download/$version/NetHack-$cleanVersion-win-x86.zip"
+  },
+  "installer": {
+    "script": [
+      "New-Item -Name logfile -ItemType file -Path $dir",
+      "New-Item -Name xlogfile -ItemType file -Path $dir"
+    ]
+  },
+  "persist": ["record", "defaults.nh", "logfile", "xlogfile"],
+  "bin": "NetHack.exe"
 }
