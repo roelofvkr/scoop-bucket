@@ -1,16 +1,16 @@
 {
-    "version": "0.22.5",
+    "version": "0.23.2",
     "homepage": "https://clonehero.net/",
     "checkver": "<div class=\"nav__version\">Latest version: <b>v([^\\ ]+)</b></div>",
     "architecture": {
         "64bit": {
-            "url": "http://dl.clonehero.net/clonehero-v.22.5/clonehero-win64.7z",
-            "hash": "45c376be42f6d56fdbcd685b20ea73ff139e15f825f4a4eec89634c392391c65",
+            "url": "http://dl.clonehero.net/clonehero-v.23.2/clonehero-win64.7z",
+            "hash": "597ffefa917b8ca4168cff3380d3fdec2412bafc8b8e70637d680841c1bfa8ee",
             "extract_dir": "clonehero-win64"
         },
         "32bit": {
-            "url": "http://dl.clonehero.net/clonehero-v.22.5//clonehero-win32.7z",
-            "hash": "1a70df542310f4eba553ead423fc07282ebf05ccc57e5d5fb6c8215598dec5e0",
+            "url": "http://dl.clonehero.net/clonehero-v.23.2//clonehero-win32.7z",
+            "hash": "8ed62234ba648db426a0085323a413845c58c0a2d83c9f8ff9506390bd6263f3",
             "extract_dir": "clonehero-win32"
         }
     },
