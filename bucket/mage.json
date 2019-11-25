@@ -1,0 +1,14 @@
+{
+  "version": "1.9.0",
+  "homepage": "https://github.com/magefile/mage",
+  "checkver": {
+    "github": "https://github.com/magefile/mage"
+  },
+  "url": "https://github.com/magefile/mage/releases/download/v1.9.0/mage_1.9.0_Windows-64bit.zip",
+  "hash": "4695885a2bc009e3159aa4d0d5d65a8aff3d5faf80ac0c166af415123a317a49",
+  "autoupdate": {
+    "note": "Thanks for using autoupdate, please test your updates!",
+    "url": "https://github.com/magefile/mage/releases/download/v$version/mage_$version_Windows-64bit.zip"
+  },
+  "bin": "mage.exe"
+}
