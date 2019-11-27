@@ -1,5 +1,5 @@
 {
-    "version": "0.23.2.1",
+    "version": "0.23.2.2",
     "homepage": "https://clonehero.net/",
     "checkver": "<div class=\"nav__version\">Latest version: <b>v([^\\ ]+)</b></div>",
     "architecture": {
