@@ -1,29 +1,40 @@
 {
-  "version": "0.66.1",
-  "homepage": "http://etternaonline.com/",
-  "checkver": {
-    "github": "https://github.com/etternagame/etterna"
-  },
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/etternagame/etterna/releases/download/v0.66.1/Etterna-0.66.1-x64.exe#etterna.7z",
-      "hash": "db3b165d648819dce46c10c920d207c5c228fe788b3ffe90da2f03c035a9b28b"
+    "version": "0.67.0",
+    "homepage": "http://etternaonline.com/",
+    "checkver": {
+        "github": "https://github.com/etternagame/etterna"
     },
-    "32bit": {
-      "url": "https://github.com/etternagame/etterna/releases/download/v0.66.1/Etterna-0.66.1-i386.exe#etterna.7z",
-      "hash": "bf49af69db00fb279e1546616c0bc62c7d13613f7166d4a345bedb50af8e88ba"
-    }
-  },
-  "autoupdate": {
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/etternagame/etterna/releases/download/v$version/Etterna-$version-x64.exe#etterna.7z"
-      },
-      "32bit": {
-        "url": "https://github.com/etternagame/etterna/releases/download/v$version/Etterna-$version-i386.exe#etterna.7z"
-      }
-    }
-  },
-  "shortcuts": [["Program\\Etterna.exe", "Etterna"]],
-  "persist": ["Announcers", "BGAnimations", "Save", "Songs", "Themes"]
+        "64bit": {
+            "url": "https://github.com/etternagame/etterna/releases/download/v0.67.0/Etterna-0.67.0-x64.exe#etterna.7z",
+            "hash": "5dd4fb8f0c40dab0457d2c0628ef01ab478f2bcaed217fecd214138a1a5a20e8"
+        },
+        "32bit": {
+            "url": "https://github.com/etternagame/etterna/releases/download/v0.67.0/Etterna-0.67.0-i386.exe#etterna.7z",
+            "hash": "7ca301390808dd50d23b877896068f8b4d96b7a6fdab657ba3d95f2fc2f8f7fb"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/etternagame/etterna/releases/download/v$version/Etterna-$version-x64.exe#etterna.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/etternagame/etterna/releases/download/v$version/Etterna-$version-i386.exe#etterna.7z"
+            }
+        }
+    },
+    "shortcuts": [
+        [
+            "Program\\Etterna.exe",
+            "Etterna"
+        ]
+    ],
+    "persist": [
+        "Announcers",
+        "BGAnimations",
+        "Save",
+        "Songs",
+        "Themes"
+    ]
 }
