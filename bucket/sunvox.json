@@ -1,9 +1,9 @@
 {
-    "version": "1.9.5c",
+    "version": "1.9.5d",
     "homepage": "http://www.warmplace.ru/soft/sunvox/",
     "checkver": "Latest release - v([^\\ ]+)",
-    "url": "http://www.warmplace.ru/soft/sunvox/sunvox-1.9.5c.zip",
-    "hash": "d12b0e8824ecb8e7f98fd42b65c2ecdbafc8d5c7f23e07f8a688db20848b34a6",
+    "url": "http://www.warmplace.ru/soft/sunvox/sunvox-1.9.5d.zip",
+    "hash": "90c539f4b1ab0165c24363a4dd8b5d6b3c7efbd91ac5f9df8e143732db60fe96",
     "autoupdate": {
         "note": "Thanks for using autoupdate, please test your updates!",
         "url": "http://www.warmplace.ru/soft/sunvox/sunvox-$version.zip"
