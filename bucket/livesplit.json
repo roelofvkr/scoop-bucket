@@ -1,18 +1,20 @@
 {
-    "version": "0.0.0",
+    "version": "1.7.7",
     "homepage": "http://livesplit.org/",
     "checkver": {
-        "github": "https://github.com/LiveSplit/LiveSplit/"
+        "github": "https://github.com/LiveSplit/LiveSplit"
     },
-    "url": "",
-    "hash": "",
+    "url": "https://github.com/LiveSplit/LiveSplit/releases/download/1.7.7/LiveSplit_1.7.7.zip",
+    "hash": "b11371efe2a23afea0b2585ec06493b6b4b580e7e1d2eca406657b7a7a0a19c0",
     "autoupdate": {
-	    "url": "https://github.com/LiveSplit/LiveSplit/releases/download/$version/LiveSplit_$version.zip"
+        "note": "Thanks for using autoupdate, please test your updates!",
+        "url": "https://github.com/LiveSplit/LiveSplit/releases/download/$version/LiveSplit_$version.zip"
     },
     "shortcuts": [
         [
             "LiveSplit.exe",
             "LiveSplit"
         ]
-    ]
+    ],
+    "bin": "LiveSplit.exe"
 }
