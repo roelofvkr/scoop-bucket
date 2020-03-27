@@ -1,0 +1,18 @@
+{
+    "version": "0.0.0",
+    "homepage": "http://livesplit.org/",
+    "checkver": {
+        "github": "https://github.com/LiveSplit/LiveSplit/"
+    },
+    "url": "",
+    "hash": "",
+    "autoupdate": {
+	    "url": "https://github.com/LiveSplit/LiveSplit/releases/download/$version/LiveSplit_$version.zip"
+    },
+    "shortcuts": [
+        [
+            "LiveSplit.exe",
+            "LiveSplit"
+        ]
+    ]
+}
