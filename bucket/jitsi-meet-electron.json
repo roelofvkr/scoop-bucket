@@ -1,28 +1,33 @@
 {
-  "version": "1.1.1",
-  "license": "Apache License 2.0",
-  "url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v1.1.1/jitsi-meet.exe#download.7z",
-  "homepage": "https://github.com/jitsi/jitsi-meet-electron",
-  "checkver": "github",
-  "autoupdate": {
-    "url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v$version/jitsi-meet.exe#download.7z"
-  },
-  "hash": "c05b87e2f0953edd3076763e1f98350bf7ee41f72a6fde415355825501e5534d",
-  "extract_dir": "\\$PLUGINSDIR",
-  "pre_install": "Get-ChildItem \"$dir\" -Exclude 'app-64.7z', 'app-32.7z' | Remove-Item -Force -Recurse",
-  "architecture": {
-    "64bit": {
-      "installer": {
-        "script": "Expand-7zipArchive \"$dir\\app-64.7z\" \"$dir\""
-      }
+    "version": "2.0.0",
+    "license": "Apache License 2.0",
+    "url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v2.0.0/jitsi-meet.exe#download.7z",
+    "homepage": "https://github.com/jitsi/jitsi-meet-electron",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v$version/jitsi-meet.exe#download.7z"
     },
-    "32bit": {
-      "installer": {
-        "script": "Expand-7zipArchive \"$dir\\app-32.7z\" \"$dir\""
-      }
-    }
-  },
-  "post_install": "Remove-Item \"$dir\\app-64.7z\", \"$dir\\app-32.7z\"",
-  "bin": "Jitsi Meet.exe",
-  "shortcuts": [["Jitsi Meet.exe", "Jitsi Meet"]]
+    "hash": "b49b9a0af351f00f8c435a90023ab806f5e3c20d54c1486c87585891d2e08a5c",
+    "extract_dir": "\\$PLUGINSDIR",
+    "pre_install": "Get-ChildItem \"$dir\" -Exclude 'app-64.7z', 'app-32.7z' | Remove-Item -Force -Recurse",
+    "architecture": {
+        "64bit": {
+            "installer": {
+                "script": "Expand-7zipArchive \"$dir\\app-64.7z\" \"$dir\""
+            }
+        },
+        "32bit": {
+            "installer": {
+                "script": "Expand-7zipArchive \"$dir\\app-32.7z\" \"$dir\""
+            }
+        }
+    },
+    "post_install": "Remove-Item \"$dir\\app-64.7z\", \"$dir\\app-32.7z\"",
+    "bin": "Jitsi Meet.exe",
+    "shortcuts": [
+        [
+            "Jitsi Meet.exe",
+            "Jitsi Meet"
+        ]
+    ]
 }
