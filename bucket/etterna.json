@@ -1,17 +1,17 @@
 {
-    "version": "0.69.0",
+    "version": "0.69.1",
     "homepage": "http://etternaonline.com/",
     "checkver": {
         "github": "https://github.com/etternagame/etterna"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/etternagame/etterna/releases/download/v0.69.0/Etterna-0.69.0-x64.exe#etterna.7z",
-            "hash": "55ab3f810c205203a221d0c36101d19c51f3b3c257153da60cace3a8a265b63f"
+            "url": "https://github.com/etternagame/etterna/releases/download/v0.69.1/Etterna-0.69.1-x64.exe#etterna.7z",
+            "hash": "12398c15d4b3a4456bb88539455052ee07419974e1ebd09021ea7069f74aff4e"
         },
         "32bit": {
-            "url": "https://github.com/etternagame/etterna/releases/download/v0.69.0/Etterna-0.69.0-i386.exe#etterna.7z",
-            "hash": "1f34fac7ddae29b2d1d1331b00ddddf602e9851027c8d444f4b70624d489a61f"
+            "url": "https://github.com/etternagame/etterna/releases/download/v0.69.1/Etterna-0.69.1-i386.exe#etterna.7z",
+            "hash": "98d618592dfc2f060ddd9a938141137cee6d101e2f0b7213fae28a28943264de"
         }
     },
     "autoupdate": {
