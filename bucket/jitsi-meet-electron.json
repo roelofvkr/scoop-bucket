@@ -1,13 +1,13 @@
 {
-    "version": "2.1.1",
+    "version": "2.2.0",
     "license": "Apache License 2.0",
-    "url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v2.1.1/jitsi-meet.exe#download.7z",
+    "url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v2.2.0/jitsi-meet.exe#download.7z",
     "homepage": "https://github.com/jitsi/jitsi-meet-electron",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v$version/jitsi-meet.exe#download.7z"
     },
-    "hash": "1322b63d4664d630c1be8192bd44acecc5e50984e5cc2a5be7f8920e3b95d5b5",
+    "hash": "7cb5aeb228a9c80770c4c003af04ad149dd872d8b3b2b8cd1e3ca42f863bded9",
     "extract_dir": "\\$PLUGINSDIR",
     "pre_install": "Get-ChildItem \"$dir\" -Exclude 'app-64.7z', 'app-32.7z' | Remove-Item -Force -Recurse",
     "architecture": {
