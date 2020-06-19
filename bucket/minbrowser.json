@@ -1,19 +1,19 @@
 {
-    "version": "1.14.1",
+    "version": "1.15.0",
     "homepage": "https://minbrowser.github.io/min/",
     "checkver": {
         "github": "https://github.com/minbrowser/min/"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/minbrowser/min/releases/download/v1.14.1/Min-v1.14.1-win32-x64.zip",
-            "hash": "f375aadd2e8798db7396727b46d29b6eb8b3b13b890ca266de39bd7ed942ea43",
-            "extract_dir": "Min-v1.14.1"
+            "url": "https://github.com/minbrowser/min/releases/download/v1.15.0/Min-v1.15.0-win32-x64.zip",
+            "hash": "609f96bfaebd48d81eda129edecf089d549b14c528382146767201183a6fce6a",
+            "extract_dir": "Min-v1.15.0"
         },
         "32bit": {
-            "url": "https://github.com/minbrowser/min/releases/download/v1.14.1/Min-v1.14.1-win32-ia32.zip",
-            "hash": "edfececd6d723237dda05ccd6839eec6cceb1df87d5805b51bec345b37b765d2",
-            "extract_dir": "Min-v1.14.1"
+            "url": "https://github.com/minbrowser/min/releases/download/v1.15.0/Min-v1.15.0-win32-ia32.zip",
+            "hash": "8472fe934836446e2ade6605a7ecde4604d4bc0bfda3500cb1202788fc247adb",
+            "extract_dir": "Min-v1.15.0"
         }
     },
     "autoupdate": {
