@@ -1,0 +1,19 @@
+{
+    "version": "0.11.1",
+    "homepage": "https://github.com/TimUntersberger/wwm/",
+    "checkver": {
+        "github": "https://github.com/TimUntersberger/wwm/"
+    },
+    "url": "https://github.com/TimUntersberger/wwm/releases/download/v0.11.1/wwm.exe",
+    "hash": "3d6071eec5d67041d341e2b730a1d9988665a326e1f63851c9fd0cf397c7a688",
+    "autoupdate": {
+        "note": "Thanks for using autoupdate, please test your updates!",
+        "url": "https://github.com/TimUntersberger/wwm/releases/download/v$version/wwm.exe"
+    },
+    "bin": [
+        [
+            "wwm.exe",
+            "wwm"
+        ]
+    ]
+}
